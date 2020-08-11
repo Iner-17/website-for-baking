@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* navigation styles */
+header {
+    background-color: #FF5E5B;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin: 0 10%;
+}
+/* Logo animation */
+.fa-cookie-bite {
+    color: #FFED66;
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+.fa-cookie-bite:hover {
+    animation: spin 2s forwards;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.nav-links {
+    display: flex;
+}
+
+#active {
+    margin-left: 20px;
+    background-color: #00CECB;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+#active:hover {
+    background-color: transparent;
+    color: #00CECB;
+    border: 2px solid #00CECB;
+    padding: 3px 13px;
+    border-radius: 10px;
+}
+
+.nav-links .nav-link {
+    margin-left: 40px;  
+    color: white;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.nav-links .nav-link:hover {
+    margin-left: 40px;  
+    color: rgba(225, 225, 225, 0.5);
+    text-transform: uppercase;
+}
+
+/* container styles */
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    min-width: 100%;
+    background-color: #FF5E5B;
+}
+
+
+.image-container {
+    
+    height: 400px;
+    width: 500px;
+}
+
+img {
+    width: 100%;
+    /* filter: drop-shadow(-10px 10px 7px rgba(0, 0, 0, 0.5)); */
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    line-height: 3.5rem;
+    color: #FFED66;
+}
+
+.title-container h1 {
+    font-size: 70px;
+}
+.title-container .done {
+    font-weight: bold;
+    font-size: 60px;
+}
+.title-container .name {
+    font-size: 30px;
+}
+
+.tape1 {
+    position: absolute;
+    top: 120px;
+    left: 250px;
+    transform: rotate(45deg);
+    height: 100px;
+    width: 30px;
+    background-color: #FFED66;
+}
+.tape2 {
+    position: absolute;
+    top: 430px;
+    left: 730px;
+    transform: rotate(45deg);
+    height: 100px;
+    width: 30px;
+    background-color: #FFED66;
+}
