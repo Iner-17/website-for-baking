@@ -94,6 +94,7 @@ nav {
     height: 2px;
     width: 25px;
     margin: 5px;
+    transition: 0.5s ease-in;
 }
 
 /* container styles */
@@ -179,7 +180,21 @@ img {
     }
     .nav-active {
         transform: translateX(0%);
+        
     }
+
+    .toggle .line-1 {
+        transform: rotate(-45deg) translate(-4px, 5px);
+    }
+    
+    .toggle .line-2 {
+        opacity: 0;
+    }
+    
+    .toggle .line-3 {
+        transform: rotate(45deg) translate(-4px, -5px);
+    }
+    
 
 @keyframes navLinkFade {
     from {
@@ -191,6 +206,7 @@ img {
         transform: translateX(0px);
     }
 }
+
 
     .nav-links li {
         padding: 50px;
