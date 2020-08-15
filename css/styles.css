@@ -11,6 +11,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: white;
+    width: 100vw;
+    height: 90vh;
 }
 
 /* navigation styles */
@@ -154,7 +156,7 @@ img {
     color: #00CECB;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     body {
         overflow-x: hidden;
     }
@@ -230,5 +232,15 @@ img {
     }
     .title-container h1 {
         font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+    .container h1 {
+        font-size: 40px;
+    }
+    .container p {
+        font-size: 13px;
     }
 }

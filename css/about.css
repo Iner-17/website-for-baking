@@ -159,7 +159,7 @@ nav {
 .container p {
     grid-column-start: 2;
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
     animation: pop-up 0.5s ease forwards;
 }
 
@@ -179,7 +179,7 @@ nav {
     font-weight: bold;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     body {
         overflow-x: hidden;
     }
@@ -243,8 +243,9 @@ nav {
     .profile {
         display: grid;
         grid-template-columns: 1fr;
+        row-gap: 10rem;
         grid-template-rows: 500px 400px;
-        grid-template-area: 
+        grid-template-areas: 
         "image"
         "para";
     }
@@ -260,10 +261,26 @@ nav {
 
 }
 
+@media screen and (max-width: 550px) {
+    .profile {
+        grid-template-rows: 450px 400px;
+        row-gap: 0.1em;
+    }
+    .container h1 {
+        font-size: 2em;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .profile {
         grid-template-rows: 400px 400px;
+        row-gap: 0.1em;
+    }
+    .profile p {
+        font-size: 14px;
     }
 }
+
+
 
 
