@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+html {
+    display: block;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -11,8 +13,10 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: white;
-    width: 100vw;
-    height: 90vh;
+    /* min-width: 100vw; */
+    max-width: 100vw;
+    height: 100vh;
+    display: block;
 }
 
 /* navigation styles */
@@ -25,6 +29,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     min-height: 10vh;
+    max-width: 100vw;
     margin: 0 10%;
 }
 /* Logo animation */
@@ -106,6 +111,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 90vh;
+    width: 100vw;
     background-color: #333;
 }
 
@@ -172,17 +178,16 @@ img {
         flex-direction: column;
         align-items: center;
         width: 50%;
-        transform: translateX(100%);
+        transform: scale(0);
         z-index: 1;
         padding: 50px 50px;
-        transition: transform 0.3s ease-in;
+        transition: transform 0.2s ease-in;
     }
     .nav-links li {
         opacity: 0;
     }
     .nav-active {
-        transform: translateX(0%);
-        
+        transform: scale(1);
     }
 
     .toggle .line-1 {
@@ -208,6 +213,9 @@ img {
         transform: translateX(0px);
     }
 }
+.title-container {
+    width: 100vw;
+}
 
     .nav-links .nav-link {
         margin-left: 0px;
@@ -232,9 +240,12 @@ img {
 }
 
 @media screen and (max-width: 450px) {
-    
+    body {
+        overflow-x: hidden;
+        display: block;
+    }
     .container h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
     .container p {
         font-size: 13px;

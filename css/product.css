@@ -194,7 +194,7 @@ nav {
         flex-direction: column;
         align-items: center;
         width: 50%;
-        transform: translateX(100%);
+        transform: scale(0);
         z-index: 1;
         transition: transform 0.3s ease-in;
         padding: 50px 50px;
@@ -203,7 +203,7 @@ nav {
         opacity: 0;
     }
     .nav-active {
-        transform: translateX(0%);
+        transform: scale(1);
     }
 
     .toggle .line-1 {
@@ -249,6 +249,6 @@ nav {
 
 @media screen and (max-width: 550px) {
     .container h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }
