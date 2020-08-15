@@ -18,3 +18,7 @@ const navSlide = () => {
 }
 
 navSlide()
+
+function alertMsg() {
+    return alert('You can call or text me, Thank you!');
+}
