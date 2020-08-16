@@ -39,7 +39,7 @@ nav {
     display: flex;
     align-items: center;
 }
-.logo h1 {
+.logo h3 {
     color: #00CECB;
     letter-spacing: 2px;
     text-transform: uppercase;
