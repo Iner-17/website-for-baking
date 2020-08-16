@@ -270,6 +270,9 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+    .logo h3 {
+        font-size: 14px;
+    }
     .profile {
         grid-template-rows: 400px 400px;
         row-gap: 0.1em;

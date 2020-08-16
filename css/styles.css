@@ -278,12 +278,20 @@ nav {
         display: block;
     }
 
+    .logo h3 {
+        font-size: 14px;
+    }
+
     .main-title {
-        padding: 20px;
+        padding: 20px 30px;
     }
 
     .main-title .dough, .done {
         font-size: 2.1em;
+    }
+
+    .main-title p {
+        font-size: 14px;
     }
 
     .main-title .done {

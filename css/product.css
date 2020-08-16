@@ -248,6 +248,9 @@ nav {
 }
 
 @media screen and (max-width: 550px) {
+    .logo h3 {
+        font-size: 14px;
+    }
     .container h1 {
         font-size: 1.5em;
     }
