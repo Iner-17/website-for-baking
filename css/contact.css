@@ -110,6 +110,10 @@ nav {
     padding: 50px;
 }
 
+.container p {
+    text-align: center;
+}
+
 .container .title h1{
     font-size: 3rem;
     letter-spacing: 2px;
@@ -239,6 +243,9 @@ h3:hover a{
 @media screen and (max-width: 550px) {
     .contact-list {
         width: 300px;
+    }
+    .container .title h1 {
+        font-size: 2em;
     }
     .contact-list .logo {
         font-size: 22px;

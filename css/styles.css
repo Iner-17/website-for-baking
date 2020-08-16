@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 html {
     display: block;
 }
@@ -11,8 +12,9 @@ html {
 }
 
 body {
+    position: relative;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    background-color: rgb(218, 213, 213);
     /* min-width: 100vw; */
     max-width: 100vw;
     height: 100vh;
@@ -105,60 +107,93 @@ nav {
 }
 
 /* container styles */
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
-    width: 100vw;
-    background-color: #333;
 }
 
-.image-container {
-    position: relative;
-    top: 0px;
-    width: 100%;
-    height: 90vh;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-}
-
-.title-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.main-title {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 650px;
-    background-color: rgb(0, 0, 0, 0.4);
-    border-top: 5px solid pink;
+    border-top: 5px solid #00CECB;
+    border-bottom: 5px solid pink;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 50px;
 }
 
-.title-container h1 {
-    text-align: center;
-    letter-spacing: 3px;
-    font-size: 70px;
-    word-spacing: 5px;
+.main-title p{
+    align-self: center;
+    color: rgb(46, 45, 45);
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.title-container a {
-    background-color: purple;
-    margin-top: 20px;
-    color: white;
-    padding: 8px 20px;
+.main-title .dough, .done {
+    font-family: 'Lobster', cursive;
+    display: inline-block;
+    font-size: 4.5em;
+    background: -webkit-linear-gradient( rgb(236, 194, 226), rgb(143, 200, 238));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(4px 4px 1px #333);
+    letter-spacing: 1px;
+}
+
+.main-title .done {
+    margin-top: -15px;
+}
+
+.main-title .done span{
+    margin-left: 20px;
+    font-size: 0.5em;
+}
+
+.main-title .ctn a {
+    background-color: rgb(143, 200, 238);
+    margin: 0 20px 0 0;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    padding: 8px 15px;
     transition: 0.3s;
 }
-.title-container a:hover {
-    transform: rotate(2deg);
-    color: #00CECB;
+
+.main-title .ctn a:hover {
+    background-color: rgba(143, 200, 238, 0.5);
+}
+
+.donut-circle {
+    position: absolute;
+    right: 10px;
+    top: 11vh;
+    z-index: -99;
+    opacity: 0.08;
+    transform: rotate(-65deg);
+    width: 400px;
+    height: 400px;
+}
+
+.red-circle-1 {
+    position: absolute;
+    left: 190px;
+    bottom: 270px;
+    z-index: -99;
+    opacity: 0.1;
+    width: 100px;
+    height: 100px;
+}
+
+.blue-circle {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    z-index: -99;
+    opacity: 0.1;
+    width: 250px;
+    height: 250px;
 }
 
 @media screen and (max-width: 775px) {
@@ -202,7 +237,22 @@ img {
         transform: rotate(45deg) translate(-4px, -5px);
     }
     
+    .main-title {
+        padding: 30px;
+    }
 
+    .main-title .dough, .done {
+        font-size: 3em;
+    }
+
+    .main-title .done {
+        margin-top: -6px;
+    }
+
+    .main-title .done span{
+        margin-left: 10px;
+        font-size: 0.5em;
+    }
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -213,9 +263,6 @@ img {
         transform: translateX(0px);
     }
 }
-.title-container {
-    width: 100vw;
-}
 
     .nav-links .nav-link {
         margin-left: 0px;
@@ -223,31 +270,57 @@ img {
     #active {
         margin-left: 0px;
     }
-    .image-container {
-        align-self: flex-start;
-        height: 50vh;
-    }
-    .title-container {
-        position: relative;
-        border-top: transparent;
-        background-color: transparent;
-        justify-content: flex-start;
-        margin-top: 0px;
-    }
-    .title-container h1 {
-        font-size: 50px;
-    }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     body {
         overflow-x: hidden;
         display: block;
     }
-    .container h1 {
-        font-size: 35px;
+
+    .main-title {
+        padding: 20px;
     }
-    .container p {
-        font-size: 13px;
+
+    .main-title .dough, .done {
+        font-size: 2.1em;
+    }
+
+    .main-title .done {
+        margin-top: -6px;
+    }
+
+    .main-title .done span{
+        margin-left: 10px;
+        font-size: 0.5em;
+    }
+
+    .main-title .ctn a {
+        margin: 0 20px 0 0;
+        letter-spacing: 0.5px;
+        border-radius: 4px;
+        padding: 4px 10px;
+        transition: 0.3s;
+    }
+
+    .donut-circle {
+        right: 20px;
+        transform: rotate(0deg);
+        width: 300px;
+        height: 300px;
+    }
+
+    .red-circle-1 {
+        left: 90px;
+        bottom: 170px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .blue-circle {
+        left: 10px;
+        bottom: 20px;
+        width: 170px;
+        height: 170px;
     }
 }
