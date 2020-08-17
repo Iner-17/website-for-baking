@@ -196,8 +196,8 @@ nav {
         width: 50%;
         transform: scale(0);
         z-index: 1;
+        padding: 50px 50px 190px;
         transition: transform 0.3s ease-in;
-        padding: 50px 50px;
     }
     .nav-links li {
         opacity: 0;

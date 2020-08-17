@@ -103,6 +103,7 @@ nav {
     transition: 0.5s ease-in;
 }
 
+/* Container */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -179,6 +180,7 @@ nav {
     font-weight: bold;
 }
 
+
 @media screen and (max-width: 775px) {
     body {
         overflow-x: hidden;
@@ -198,7 +200,7 @@ nav {
         width: 50%;
         transform: scale(0);
         z-index: 1;
-        padding: 50px 50px;
+        padding: 50px 50px 190px;
         transition: transform 0.2s ease-in;
     }
     .nav-links li {
