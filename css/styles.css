@@ -39,6 +39,7 @@ nav {
 .logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .logo h3 {
   color: rgb(243, 152, 183);
@@ -119,11 +120,21 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border-top: 5px solid #00CECB; */
-  /* border-bottom: 5px solid pink; */
   border-radius: 50px;
   background: white;
   padding: 40px 80px;
+  animation: slide 0.7s ease forwards;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .main-title p {
@@ -141,10 +152,6 @@ nav {
   font-size: 5em;
   font-weight: 200;
   color: black;
-  /* background: -webkit-linear-gradient( rgb(236, 194, 226), rgb(143, 200, 238));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-  /* filter: drop-shadow(4px 4px 1px #333); */
   letter-spacing: 1px;
 }
 
@@ -272,7 +279,7 @@ nav {
 
   .main-title .dough,
   .done {
-    font-size: 2.1em;
+    font-size: 2.8em;
   }
 
   .main-title p {
@@ -280,7 +287,7 @@ nav {
   }
 
   .main-title .done {
-    margin-top: -6px;
+    margin-top: -9px;
   }
 
   .main-title .done span {
@@ -289,31 +296,11 @@ nav {
   }
 
   .main-title .ctn a {
+    font-size: 14px;
     margin: 0 20px 0 0;
     letter-spacing: 0.5px;
     border-radius: 4px;
     padding: 4px 10px;
     transition: 0.3s;
-  }
-
-  .donut-circle {
-    right: 20px;
-    transform: rotate(0deg);
-    width: 300px;
-    height: 300px;
-  }
-
-  .red-circle-1 {
-    left: 90px;
-    bottom: 170px;
-    width: 70px;
-    height: 70px;
-  }
-
-  .blue-circle {
-    left: 10px;
-    bottom: 20px;
-    width: 170px;
-    height: 170px;
   }
 }
